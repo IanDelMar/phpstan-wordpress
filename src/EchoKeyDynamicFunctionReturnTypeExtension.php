@@ -29,12 +29,7 @@ class EchoKeyDynamicFunctionReturnTypeExtension implements \PHPStan\Type\Dynamic
     private const FUNCTIONS = [
         'get_search_form' => 0,
         'the_title_attribute' => 0,
-        'wp_dropdown_categories' => 0,
-        'wp_dropdown_languages' => 0,
-        'wp_dropdown_pages' => 0,
-        'wp_dropdown_users' => 0,
         'wp_get_archives' => 0,
-        'wp_link_pages' => 0,
         'wp_list_authors' => 0,
         'wp_list_bookmarks' => 0,
         'wp_list_categories' => 0,
@@ -58,7 +53,6 @@ class EchoKeyDynamicFunctionReturnTypeExtension implements \PHPStan\Type\Dynamic
      */
     private const ALWAYS_VOID = [
         'the_title_attribute',
-        'wp_dropdown_languages',
         'wp_get_archives',
         'wp_list_comments',
     ];
@@ -89,12 +83,7 @@ class EchoKeyDynamicFunctionReturnTypeExtension implements \PHPStan\Type\Dynamic
     /**
      * @see https://developer.wordpress.org/reference/functions/get_search_form/
      * @see https://developer.wordpress.org/reference/functions/the_title_attribute/
-     * @see https://developer.wordpress.org/reference/functions/wp_dropdown_categories/
-     * @see https://developer.wordpress.org/reference/functions/wp_dropdown_languages/
-     * @see https://developer.wordpress.org/reference/functions/wp_dropdown_pages/
-     * @see https://developer.wordpress.org/reference/functions/wp_dropdown_users/
      * @see https://developer.wordpress.org/reference/functions/wp_get_archives/
-     * @see https://developer.wordpress.org/reference/functions/wp_link_pages/
      * @see https://developer.wordpress.org/reference/functions/wp_list_authors/
      * @see https://developer.wordpress.org/reference/functions/wp_list_bookmarks/
      * @see https://developer.wordpress.org/reference/functions/wp_list_categories/
